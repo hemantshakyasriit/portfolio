@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.tooltip{
+    position: relative;
+    margin-top: 20px;
+}
+
+.text{
+    position: absolute;
+    visibility: hidden;
+
+
+    border: 1px solid black;
+    color: rgb(24, 22, 22);
+    width: 100px;
+    border-radius: 5px;
+    top: 20px;
+}
+
+.tooltip:hover .text{
+    visibility: visible;
+}
+
+
+img{
+    margin-top: 50px;
+    border-radius: 50%;
+    position: relative;
+}
+.i{
+    font-size: 50px;
+    color: rgb(15, 15, 15);
+    background-color: rgb(15, 218, 49);
+    border-radius: 50%;
+    position: absolute;
+    left: 150px;
+    top:220px;
+    display: none;
+}
+
+div:hover .i{
+    display: block;
+    animation: slow .5s;
+
+}
+
+@keyframes slow{
+    
+    0%{top:230px}
+    100%{top: 220px;}
+
+}
+
+
+
